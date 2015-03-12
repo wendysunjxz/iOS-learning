@@ -8,6 +8,7 @@
 
 @property (weak, nonatomic) UISplitViewController *splitViewController;
 @property (strong, nonatomic) UIViewController *currDetailController ;
+@property (strong,nonatomic) UIGestureRecognizer *returnGesture;
 
 + (DetailController*)sharedDetailController;
 

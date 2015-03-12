@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutViewController">
             <connections>
+                <outlet property="labelTaxiSpace" destination="1" id="ZjZ-dh-4GD"/>
+                <outlet property="taxiHeight" destination="Erw-HY-Xu5" id="IUm-Ax-I4v"/>
+                <outlet property="taxiView" destination="Rq9-aW-bLx" id="LzF-ui-k7B"/>
+                <outlet property="taxiWidth" destination="l8a-FQ-th5" id="v2p-Jz-kTF"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -14,35 +19,38 @@
             <rect key="frame" x="0.0" y="64" width="320" height="504"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CarValet App" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvR-yj-Mwm">
-                    <rect key="frame" x="109" y="187" width="103" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1GB-RR-brg">
                     <rect key="frame" x="152" y="216" width="17" height="18"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Addison-Wesley" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9IH-2S-r5f">
-                    <rect key="frame" x="98" y="297" width="125" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <rect key="frame" x="98.5" y="297" width="124.5" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1a-G2-1IG">
-                    <rect key="frame" x="145" y="242" width="30" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <rect key="frame" x="145.5" y="242.5" width="29.5" height="20.5"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="and" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJG-Yt-IBf">
                     <rect key="frame" x="147" y="271" width="26" height="18"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Rq9-aW-bLx">
+                    <rect key="frame" x="140" y="139" width="40" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.95561297310000004" blue="0.9322676956" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Erw-HY-Xu5"/>
+                        <constraint firstAttribute="width" constant="40" id="l8a-FQ-th5"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CarValet App" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvR-yj-Mwm">
+                    <rect key="frame" x="120" y="196" width="103" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
@@ -53,15 +61,23 @@
                 <constraint firstItem="YJG-Yt-IBf" firstAttribute="top" secondItem="P1a-G2-1IG" secondAttribute="bottom" constant="8" symbolic="YES" id="6QM-fe-q8H"/>
                 <constraint firstItem="1GB-RR-brg" firstAttribute="top" secondItem="yvR-yj-Mwm" secondAttribute="bottom" constant="8" symbolic="YES" id="7d3-cA-KyB"/>
                 <constraint firstItem="P1a-G2-1IG" firstAttribute="top" secondItem="1GB-RR-brg" secondAttribute="bottom" constant="8" symbolic="YES" id="BnT-c1-4UH"/>
+                <constraint firstItem="yvR-yj-Mwm" firstAttribute="top" secondItem="Rq9-aW-bLx" secondAttribute="bottom" constant="8" symbolic="YES" id="F2b-PW-n4w"/>
                 <constraint firstAttribute="centerY" secondItem="P1a-G2-1IG" secondAttribute="centerY" id="LYl-CN-d2k"/>
                 <constraint firstAttribute="centerX" secondItem="P1a-G2-1IG" secondAttribute="centerX" id="T1t-Sw-ied"/>
                 <constraint firstAttribute="centerX" secondItem="9IH-2S-r5f" secondAttribute="centerX" id="Yp1-uy-hV0"/>
                 <constraint firstItem="9IH-2S-r5f" firstAttribute="top" secondItem="YJG-Yt-IBf" secondAttribute="bottom" constant="8" symbolic="YES" id="huk-6R-BRp"/>
                 <constraint firstAttribute="centerX" secondItem="yvR-yj-Mwm" secondAttribute="centerX" id="icn-lR-RA8"/>
+                <constraint firstAttribute="centerX" secondItem="Rq9-aW-bLx" secondAttribute="centerX" id="upF-i4-y4w"/>
             </constraints>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
+    <resources>
+        <image name="placeholder" width="40" height="40"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

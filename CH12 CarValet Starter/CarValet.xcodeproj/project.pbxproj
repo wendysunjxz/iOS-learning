@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E203EC21AA44352001FE0A3 /* ReturnGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E203EC11AA44352001FE0A3 /* ReturnGestureRecognizer.m */; };
+		2E203EC51AAE4D19001FE0A3 /* DragViewGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E203EC41AAE4D19001FE0A3 /* DragViewGesture.m */; };
 		5D0B84AD17F65E8400837A6F /* YearEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0B84AC17F65E8400837A6F /* YearEditViewController.m */; };
 		5D3C093017F2988900CC11EE /* Acura-16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D3C092517F2988900CC11EE /* Acura-16.jpg */; };
 		5D3C093117F2988900CC11EE /* BMW-11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D3C092617F2988900CC11EE /* BMW-11.jpg */; };
@@ -68,6 +69,8 @@
 /* Begin PBXFileReference section */
 		2E203EC01AA44352001FE0A3 /* ReturnGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReturnGestureRecognizer.h; sourceTree = "<group>"; };
 		2E203EC11AA44352001FE0A3 /* ReturnGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReturnGestureRecognizer.m; sourceTree = "<group>"; };
+		2E203EC31AAE4D19001FE0A3 /* DragViewGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragViewGesture.h; sourceTree = "<group>"; };
+		2E203EC41AAE4D19001FE0A3 /* DragViewGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragViewGesture.m; sourceTree = "<group>"; };
 		5D0801F317F1E4B500E2FC97 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5D0801F417F1E4EE00E2FC97 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5D0B84AA17F656F700837A6F /* ViewCarProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewCarProtocol.h; sourceTree = "<group>"; };
@@ -173,6 +176,8 @@
 			children = (
 				2E203EC01AA44352001FE0A3 /* ReturnGestureRecognizer.h */,
 				2E203EC11AA44352001FE0A3 /* ReturnGestureRecognizer.m */,
+				2E203EC31AAE4D19001FE0A3 /* DragViewGesture.h */,
+				2E203EC41AAE4D19001FE0A3 /* DragViewGesture.m */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -477,6 +482,7 @@
 				5DB0D73A17EFB9730063436F /* Car.m in Sources */,
 				5DB0D70D17EFB8B90063436F /* main.m in Sources */,
 				5D55ACB217F68127006EE36A /* CarValet.xcdatamodeld in Sources */,
+				2E203EC51AAE4D19001FE0A3 /* DragViewGesture.m in Sources */,
 				5D8CAFDD17F5D26D009294ED /* MakeModelEditViewController.m in Sources */,
 				5D74F69317F53F2900463B56 /* ViewCarTableViewController.m in Sources */,
 				5D74F69017F50BD500463B56 /* CarTableViewCell.m in Sources */,

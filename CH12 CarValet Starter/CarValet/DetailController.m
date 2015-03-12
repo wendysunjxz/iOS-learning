@@ -2,6 +2,7 @@
 //  CarValet
 
 #import "DetailController.h"
+#import "ReturnGestureRecognizer.h"
 #import <QuartzCore/QuartzCore.h>
 
 
@@ -33,6 +34,10 @@
 - (void)setCurrDetailController:(UIViewController*)currDetailController
                     hidePopover:(BOOL)hidePopover{
     NSArray *newStack = nil;
+    
+    if(self.returnGesture && currDetailController && (_currDetailController != currDetailController)){
+        [currDetailController.view addGestureRecognizer:self.returnGesture];
+    }
     
     if (currDetailController == nil) {
         UINavigationController *rootController =
@@ -115,6 +120,7 @@
 - (void)hidePopover
 {
     [menuPopoverController dismissPopoverAnimated:YES];
+    
 }
 
 

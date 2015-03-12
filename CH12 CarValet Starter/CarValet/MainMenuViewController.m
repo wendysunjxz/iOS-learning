@@ -7,6 +7,7 @@
 #import "DetailController.h"
 #import "CarTableViewController.h"
 #import "CarDetailViewController.h"
+#import "ReturnGestureRecognizer.h"
 
 #import "CDCar.h"
 
@@ -31,6 +32,9 @@
                                    imageWithRenderingMode:
                                    UIImageRenderingModeAlwaysTemplate];
     }
+    
+    ReturnGestureRecognizer *returnGesture = [[ReturnGestureRecognizer alloc] initWithTarget:self action:@selector(returnHome:)];
+    [DetailController sharedDetailController].returnGesture =returnGesture;
 }
 
 
@@ -132,6 +136,17 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"\ncarViewDone\n\n");
 }
 
+#pragma mark - Return Gesture Action Method
 
+-(IBAction)returnHome:(UIGestureRecognizer *)sender{
+    [self.tableView deselectRowAtIndexPath:self.tableView.indexPathForSelectedRow animated:YES];
+    
+    if(currentCarDetailController != nil){
+        [self.navigationController popToRootViewControllerAnimated:YES];
+        currentCarDetailController = nil;
+    }
+    
+    [DetailController sharedDetailController].currDetailController = nil;
+}
 
 @end
